@@ -260,7 +260,7 @@
 - [ ] Celebrate successes.
 - [ ] Remove impediments
 
-#### Q37. A team needs to do research, design, prototyping. What is this type of story called?
+#### Q37. A team needs to do research, design, or prototyping. What is this type of story called?
 
 - [x] Exploratory spike
 - [ ] Backlog refinement
@@ -551,10 +551,12 @@
 
 #### Q77. Which statement best describes Agile, Lean, and Six Sigma?
 
-- [ ] They are strategies for delivering customer value.
+- [x] They are strategies for delivering customer value.
 - [ ] They were pioneered by Toyota.
 - [ ] They are strategies for discovering what the customer wants.
 - [ ] They are derived from statistical process control.
+
+[Reference](https://agilemanifesto.org/principles) - First paragraph clearly points out that Agile is about delivering value to the customer. [Lean](https://en.wikipedia.org/wiki/Lean_software_development) is a subset of the Agile community and [Six Sigma](https://en.wikipedia.org/wiki/Six_Sigma) is Agile applied to manufacturing.
 
 #### Q78. What is a user story?
 
@@ -593,7 +595,7 @@
 - [ ] It was written in 2001 and is obsolete.
 - [ ] It was first published as part of Jim Highsmith's doctoral thesis.
 
-#### Q83. The team is not going to complete its Spring Commitment. As the Team Facilitator, what should you do?
+#### Q83. The team is not going to complete its Sprint Commitment. As the Team Facilitator, what should you do?
 
 - [ ] Ask the PO to extend the sprint.
 - [ ] Advise the PO as soon as possible.
@@ -637,14 +639,14 @@
 - [ ] apprentice developer
 - [ ] generalizing specialist
 
-#### Q89. Which statement is _not_ true about pair programming?
+#### Q89. Which statement is not true about pair programming?
 
-- [ ] It has been discredited because it is too expensive.
-- [x] In pair programming, two developers share one computer and take turns at the keyboard.
+- [x] It has been discredited because it is too expensive.
+- [ ] In pair programming, two developers share one computer and take turns at the keyboard.
 - [ ] It is a great way to teach someone who is new to the team.
 - [ ] The code produced by two developers who are collaborating is typically higher quality than if they were working alone.
 
-#### Q90. People with fixed mindset \_ .
+#### Q90. People with a fixed mindset \_ .
 
 - [x] have better focus and longer attention spans
 - [ ] are more goal oriented
@@ -667,10 +669,12 @@
 
 #### Q93. What is the name of the technique in which a story includes an input, a translation of input to output, and an output?
 
-- [ ] input-output processing
+- [x] input-output processing
 - [ ] ITIOO story format
 - [ ] thin vertical slice
 - [ ] structured coding
+
+ITIOO isn't a thing, thin verticle slicing is refering to what work you prioritise, and structured code has nothing to so with stories.
 
 #### Q94. What is the term for a team member who is "T-shaped"?
 
@@ -683,10 +687,10 @@
 
 #### Q95. What is a lean canvas?
 
-- [ ] decompose solution into epics, features, and stories
-- [x] template for lightweight business plans that makes your assumptions explicit
-- [ ] tool to plan future project releases
-- [ ] technique for projecting growth in market share.
+- [ ] It is used to decompose solution into epics, features, and stories
+- [x] It is a template for lightweight business plans that makes your assumptions explicit
+- [ ] It is a tool to plan future project releases
+- [ ] It is a technique for projecting growth in market share.
 
 [Source](http://ask.leanstack.com/en/articles/901274-what-is-a-lean-canvas) `1-page business plan template that helps you deconstruct your idea into its key assumptions using 9 basic building blocks.`
 
@@ -736,30 +740,53 @@
 - [x] Ask the product owner to revise the acceptance criteria so it can be accepted and counted
 - [ ] explain that, in Agile, working software is the primary measure of progress. Then help...
 
-#### Q102. Which statement is _not_ true about pair programming?
-
-- [ ] The code produced by two developers who are collaborating is typically higher quality that if they were working alone
-- [ ] it is a great way to teach someone who is new to the team
-- [ ] in pair programming, two developers share one computer and take turns at the keyboard
-- [x] it has been discredited because it is too expansive
-
-#### Q103. When planning a meeting, which action is most important?
+#### Q102. When planning a meeting, which action is most important?
 
 - [x] clariying the expected outcome
 - [ ] taking notes
 - [ ] inviting the Project Manager
 - [ ] making sure everyone speaks
 
-#### Q104. You are facilitating a meeting and, unexpectedly, a key person doesn't attend. What should you do?
+#### Q103. You are facilitating a meeting and, unexpectedly, a key person doesn't attend. What should you do?
 
 - [ ] Hold the meeting and update the person who could not attend later.
 - [ ] Ask the person who could not attend to reschedule the meeting based on their availability.
 - [x] Ask all meeting partecipants what they want to do about the one person's absence
 - [ ] Reschedule the meeting for when all necessary people can attend
 
-#### Q105. What is Open Space?
+#### Q104. What is Open Space?
 
 - [ ] a design concept for team rooms
 - [ ] a room for teams to demo their work
 - [ ] a placeholder in the code body for the future functionality
 - [x] a meeting format where participants create and manage the agenda
+
+#### Q105. Which choice is not an expected benefit of refactoring?
+
+- [ ] Refactoring can reduce the effort for future development
+- [x] Refactoring is used to fix bugs
+- [ ] Refactoring improves the design of the system
+- [ ] Refactoring improves the maintainability of the code
+
+#### Q106. In the Scaled Agile Framework, consecutive iterations are grouped together into a PI. What is a PI?
+
+- [ ] Project Increment
+- [ ] Portfolio Increment
+- [ ] Product Increment
+- [x] Program Increment
+
+[Source](https://www.scaledagileframework.com/program-increment/) `A Program Increment (PI) is a timebox during which an Agile Release Train (ART) delivers incremental value in the form of working, tested software and systems. PIs are typically 8 – 12 weeks long.`
+
+#### Q107. How an you improve interaction between team members?
+
+- [ ] Move people's workstation around in the team room to create new social possibilites
+- [ ] Since no one has come to you with a compliant, assume that the limited interaction works for everyone
+- [x] Ask the team if they would like to do something recreational together and offer to organize it
+- [ ] Tell the team that you see this as a problem and ask them to solve it
+
+#### Q108. Which scale is typically used for Planning Poker?
+
+- [ ] less than 1 hour, 1 to 4 hours, 4 to 8 hours, 8 to 24 hours, more than 24 hours
+- [ ] 2, 4, 6, 8, 10
+- [ ] XS, S, M, L, XL
+- [x] 1, 2, 3, 4, 5, 8, 13, 20

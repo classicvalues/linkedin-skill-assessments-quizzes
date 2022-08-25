@@ -167,6 +167,8 @@
 
 #### Q23. Which chart type can display two different data series as a different series type within the same chart?
 
+<img src="https://i.imgur.com/z2BfqIF.png" width="600" height="450"/>
+
 - [x] XY chart
 - [ ] clustered column
 - [ ] bubble chart
@@ -1113,3 +1115,88 @@ https://support.microsoft.com/en-us/office/print-headings-or-titles-on-every-pag
 - [ ] scatter chart
 - [ ] pie chart
 - [x] map chart
+
+#### Q123. Column A contains a list of book titles. To ensure that no book title appears more than once, first you select column A. What should you do next?
+
+- [ ] Right-click the column head and select Unique
+- [ ] On the **Home** ribbon, click **Clear > Duplicates**
+- [x] On the **Data** ribbon, click **Remove Duplicates**
+- [ ] On the **Data** ribbon, click \*\*Data Validation
+
+#### Q124. You want to copy only the cells that are displayed here - not the hidden cells - into another worksheet. After selecting the cells in the worksheet, how do you accomplish this?
+
+- [ ] On the View tab, select Visible cells only, Paste into the destination worksheet
+- [ ] On the Home tab, clear the Hidden cells check box. Paste into the destination worksheet
+- [ ] Copy the cells. Then in the destination worksheet, click Paste special > Paste only visible cells
+- [x] On the Home tab, click Find & Select > Go to special > Visible cells only. Paste into the destination worksheet
+
+#### Q125. You want to define a reusable process to reshape data (removing blank rows, merging columns, etc.). What toold can you use to accomplush this?
+
+- [x] Power Query
+- [ ] Data Analysis
+- [ ] Power Pivot
+- [ ] Data Modeler
+
+#### Q126. You want to be able restrict values allowed in a cell and need to create a drop-down list of values from which users can choose. Which feature should you use?
+
+- [ ] Project Worksheet
+- [x] Data validation
+- [ ] Conditional Formatting
+- [ ] Allow Users to Edit Ranges
+
+#### Q127. Which situation will result in a #REF! error?
+
+- [x] The cell referenced in the error message has been deleted
+- [ ] A nonnumeric agument is used in a function when a numeric value is expected
+- [ ] A required operator is omitted in a formula
+- [ ] The formula contains an undefined range
+
+#### Q128. Which feature allows formatting to be automatically added to new columns and rows?
+
+- [ ] AutoFormat
+- [ ] conditional formatting
+- [x] Format as Table
+- [ ] PivotTable
+
+#### Q129. What Excel feature can you use to automatically format cells that are greater than a specified value with designated fill and text colors?
+
+- [ ] Flash Fill
+- [x] Conditional Formatting
+- [ ] Format as Table
+- [ ] Theme Colors
+
+#### Q130. Which formula could _not_ have been entered in cell C5?
+
+![60d22a3a498ede33588680f8-1624476186391](https://user-images.githubusercontent.com/6527493/184480550-f12346e9-79ae-4dbc-ad4f-b5365a50236f.png)
+
+- [x] =SUBTOTAL(9, C2:C4)
+- [ ] =C2+C3+C4
+- [ ] =SUBTOTAL(C2:C4)
+- [ ] =SUM(C2:C4)
+
+#### Q131. The last two digits of the Representative ID Number is the Office ID. Which function, when entered into cell B2 and then dragged to cell B6, returns the Office ID for each representative?
+
+![WhatsApp Image 2022-08-15 at 00 08 22](https://user-images.githubusercontent.com/80069786/184557060-2164d8b6-37ae-41d3-9525-31e88065fbdc.jpeg)
+
+- [ ] =TRIM(A2,2)
+- [x] =LEFT(A2,2)
+- [ ] =RIGHT(A2,2)
+- [ ] =MID(A2,2)
+
+#### Q132. What is the fastest way to see the data in column E
+
+![Excel sheet](https://user-images.githubusercontent.com/48485675/185646309-02d17622-4021-4f2a-b7c0-144b63193902.png)
+
+- [x] Double-click between column headers E and F
+- [ ] Double-click between column headers F and G
+- [ ] On the **Home** tab of the ribbon, select **Fit to Column**
+- [ ] Drag to resize the column
+
+#### Q133. Excel's default view contains the Quick Access Toolbar and the ribbon. Which can you customize?
+
+![QAT and Ribbon](https://user-images.githubusercontent.com/48485675/185646537-a53cab9e-027f-4783-8b29-56a0e12576f5.png)
+
+- [ ] You cannot customize either.
+- [ ] only the ribbon
+- [x] both the Quick Access Toolbar and the ribbon
+- [ ] only the Quick Access Toolbar

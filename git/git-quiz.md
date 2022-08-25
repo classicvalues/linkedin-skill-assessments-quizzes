@@ -9,13 +9,12 @@
 
 #### Q2. What command lets you create a connection between a local and remote repository?
 
-- [x] git remote add new
+- [ ] git remote add new
 - [x] git remote add origin
 - [ ] git remote new origin
 - [ ] git remote origin
 
-The command is git remote add. The new added connection can be named origin or new. The only constraints, although it is not documented AFAIK, is that the connection name needs to be acceptable to git-check-ref-format, and it cannot be repeated.
-If the LinkedIn assessment asks this and you can choose just one option, then leave feedback.
+[Reference](https://stackoverflow.com/questions/20291731/how-to-connect-to-a-remote-git-repository)
 
 #### Q3. Describe what these Git commands do to the commit history:
 
@@ -1027,3 +1026,17 @@ remote repository, named origin, to point to the new remote repository at this l
 - [ ] git pull <url>
 - [ ] git replicate <url>
 - [ ] git checkout <url>
+
+#### Q127. When Git workflows contain a topic branch, what purpose does the topic branch serve?
+
+- [ ] Topic branches store unstable code until it is peer reviewed for integration into another feature branch. <url>
+- [x] Topic branches correspond to different stages of development and are always open for long-running branches to be pulled into. <url>
+- [ ] Topic branches are used in waterfall development methodologies to track the state of the code during the various stages of waterfall. <url>
+- [ ] Topic branches are short-lived branches used to store work related to a particular feature. <url>
+
+#### Q128. What practice can help reduce the chances of encountering a merge conflict?
+
+- [ ] Provide detailed commit messages that describe the changes being introduced by the commit. <url>
+- [ ] make large commits that introduce multiple featurs. <url>
+- [x] Keep local repository branches in sync with upstream branches in the remote repository by committing,pushing and pulling frequently. <url>
+- [ ] Avoid frequent interaction with the remote repository to reduce the probability of pulling conflicts. <url>

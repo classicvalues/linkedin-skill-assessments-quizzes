@@ -25,6 +25,8 @@
 
 [Official documentation: Task asynchronous programming model](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model)
 
+resposta correta --> var contacts = new List<string>();
+
 #### Q4. How would you determine if a class has a particular attribute?
 
 - [ ] .
@@ -127,10 +129,14 @@ Attribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActi
 
 #### Q10. What is the difference between a.Equals(b) and a == b?
 
-- [ ] The .Equals method compares reference identities while the == compares contents.
-- [ ] The .Equals method compares primitive values while == compares all values.
-- [x] The .Equals method compares contents while == compares references reference identity.
-- [ ] The .Equals method compares reference type while == compares primitive value types.
+- [ ] The .Equals method compares reference identities while the `==` compares contents.
+- [ ] The .Equals method compares primitive values while `==` compares all values.
+- [x] The .Equals method compares contents while `==` compares reference identity.
+- [ ] The .Equals method compares reference type while `==` compares primitive value types
+
+[Official documentation: Object.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)
+
+[c-sharpcorner: Equality Operator(==) vs .Equals()](https://www.c-sharpcorner.com/UploadFile/3d39b4/difference-between-operator-and-equals-method-in-C-Sharp)
 
 #### Q11. Which choice best describes a deadlock situation?
 
@@ -379,6 +385,9 @@ public interface INameable
 - [x] only when required
 - [ ] only when programmatically loaded
 
+1. [Official documentation: Assembly Loading](https://docs.microsoft.com/en-us/dotnet/framework/deployment/best-practices-for-assembly-loading)
+2. [Stackoverflow : When exactly are assemblies loaded?](https://stackoverflow.com/questions/21914692/when-exactly-are-assemblies-loaded)
+
 #### Q35. What is most accurate description of a regular expression?
 
 - [ ] A regular expression is a C# tool used to parse HTML
@@ -386,9 +395,8 @@ public interface INameable
 - [ ] A regular expression allows a variable to be passed by reference.
 - [ ] A regular expression allows a class to conform to the Equatable protocol.
 
-[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
-
-[Official documentation: .NET regular expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions)
+1. [Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+2. [Official documentation: .NET regular expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions)
 
 #### Q36. Why would you use a class field in C#
 
@@ -429,9 +437,8 @@ public static void Main(string[] args)
 - [x] an error, because the method signature of Login doesn't match the delegate
 - [ ] Login successful... Valid user!
 
-[Official documentation: Introduction to Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)
-
-[Official documentation: Introduction to Events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)
+1. [Official documentation: Introduction to Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)
+2. [Official documentation: Introduction to Events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)
 
 #### Q39. How would you declare a sealed class named User?
 
@@ -449,9 +456,8 @@ public static void Main(string[] args)
 - [ ] non-static classes need to initialize all class members at runtime, while static classes do not
 - [ ] non-static classes do not need to be initialized while static classes do
 
-[stackoverflow](https://stackoverflow.com/questions/20451554/whats-the-function-of-a-static-constructor-in-a-non-static-class)
-
-[Official documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)
+1. [stackoverflow](https://stackoverflow.com/questions/20451554/whats-the-function-of-a-static-constructor-in-a-non-static-class)
+2. [Official documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)
 
 #### Q41. Which characteristic prevents this code from compiling?
 
@@ -691,16 +697,17 @@ public int Password
 - [x] `Virtual methods always need a default implementation.`
 - [ ] `Virtual methods cannot have default implementation.`
 
-[Official documentation: virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
-
-[c-sharpcorner: Virtual Method in C#](https://www.c-sharpcorner.com/UploadFile/3d39b4/virtual-method-in-C-Sharp/)
+1. [Official documentation: virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
+2. [c-sharpcorner: Virtual Method in C#](https://www.c-sharpcorner.com/UploadFile/3d39b4/virtual-method-in-C-Sharp/)
 
 #### Q64. What is likely to happen if you have multiple threads accessing the same resource in your program?
 
 - [ ] `resource overload`
 - [ ] `thread jumping`
-- [ ] `deadlock and race conditions`
+- [x] `deadlock and race conditions`
 - [ ] `nothing, since this is what threading is for`
+
+[Official documentation: race conditions](https://docs.microsoft.com/en-us/archive/msdn-magazine/2008/october/concurrency-hazards-solving-problems-in-your-multithreaded-code)
 
 #### Q65. How do you indicate that a string might be null?
 
@@ -762,3 +769,12 @@ public int Password
 - [ ] `string <[]> partyInvites = new string <[10]>;`
 
 [Official Documentation: Jagged Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/jagged-arrays)
+
+#### Q72. How could you pause a thread for three seconds?  
+- [ ] Thread.Pause(3000);
+- [ ] Thread.Resume(-3000);
+- [ ] Thread.Suspend(3000);
+- [x] Thread.Sleep(3000);    
+    
+[Official Documentation: https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread.sleep?view=net-6.0]
+    
