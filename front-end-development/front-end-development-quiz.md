@@ -741,7 +741,7 @@ box {
 - [ ] the brightness of the color matching a brightness of 38%
 - [ ] the intensity of the color matching an intensity of 38%
 
-[Source: W3 Schools]([https://www.w3schools.com/accessibility/accessibility_skip_links.php](https://www.w3schools.com/colors/colors_hsl.asp))
+[Source: W3 Schools](<[https://www.w3schools.com/accessibility/accessibility_skip_links.php](https://www.w3schools.com/colors/colors_hsl.asp)>)
 
 #### Q74. What is a skiplink?
 
@@ -767,8 +767,8 @@ box {
 - [ ] a new database format designed to replace MySQL
 
 [Source: GraphQL official website](https://graphql.org/)
-  
-#### Q77. Wich choice will place a multiline text input field on the page?
+
+#### Q77. Which choice will place a multiline text input field on the page?
 
 - [ ] `<multiline></multiline>`
 - [x] `<textarea></textarea>`
@@ -809,3 +809,10 @@ box {
 - [x] td
 - [ ] figure
 - [ ] p
+
+#### Q82. Which attribute is uses to add text to an image that will be displayed if the image does not load and read out to screen reader users?
+
+- [ ] title
+- [ ] data
+- [ ] src
+- [x] alt
