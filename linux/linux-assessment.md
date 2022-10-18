@@ -761,3 +761,47 @@ if [[ $FILE == $GLOB ]] ;then
 
 1. [reference:](https://stackoverflow.com/questions/18787375/how-do-i-extract-the-contents-of-an-rpm)
 2. [reference:](https://man7.org/linux/man-pages/man8/rpm2cpio.8.html)
+
+#### Q91. Which variable contains last background job process id ?
+
+- [x] `$!`
+- [ ] `$$`
+- [ ] `$?`
+- [ ] `$*`
+
+[reference:](https://www.globalguideline.com/interview_questions/Answer.php?a=Which_variable_contains_last_background_job_process_ida_b_c_d_)
+
+#### Q92. Which feature does LVM2 included in most distributions not support?
+
+- [ ] volume mirroring
+- [x] volume striping
+- [ ] increasing LV size while mounted
+- [ ] reducing LV size while mounted
+
+#### Q93. Which improvements do access control lists (ACLs) have over standard Linux permissions?
+
+- [x] ACLs allow permissions to be set for more than one user or group on a file or directory.
+- [ ] ACLs provide mandatory access control (MAC) functionality through SELinux for files and directories.
+- [ ] ACLs allow a file to be owned by more than one user and group.
+- [ ] ACLs provide additional flags such as append-only and immutable.
+
+#### Q94. What is a maximum length for a filename under Linux?
+
+- [ ] 256 bytes
+- [ ] 1084 bytes
+- [x] 255 bytes
+- [ ] 1023 bytes
+
+#### Q95. Which command do you use to rename a file in Linux?
+
+- [x] mv
+- [ ] rn
+- [ ] rename
+- [ ] ren
+
+#### Q96. Which file is backup file of /etc/passwd ?
+
+- [x] /etc/passwd-
+- [ ] /etc/passwd
+- [ ] /etc/paaswd.
+- [ ] We can not recover

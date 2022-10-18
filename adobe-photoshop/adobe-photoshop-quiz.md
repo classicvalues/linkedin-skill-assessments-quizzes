@@ -500,9 +500,11 @@
 #### Q64. What is the outcome if you make a selection and then add an adjustment layer?
 
 - [ ] The adjustment layer contains a vector mask that applies the adjustment only to the unselected pixels.
-- [ ] The adjustment layer contains a layer mask that applies the adjustment only to the selected pixels.
+- [x] The adjustment layer contains a layer mask that applies the adjustment only to the selected pixels.
 - [ ] The adjustment layer contains a layer mask that applies the adjustment only to the unselected pixels.
 - [ ] The adjustment layer contains a vector mask that applies the adjustment only to the selected pixels.
+
+[Reference under section titled 'Create and confine adjustment and fill layers'](https://helpx.adobe.com/photoshop/using/adjustment-fill-layers.html)
 
 #### Q65. Which filter is useful for removing lens distortion from JPEG photos based on lens-specific settings?
 
@@ -534,7 +536,10 @@
 
 #### Q69. Which tool can you use to manually darken an area of an image
 
-- [x] The Burn Tool
+- [x] Burn
+- [ ] Sharpen
+- [ ] Blur
+- [ ] Dodge
 
 #### Q70. How many layer masks can be added to an image?
 
@@ -557,20 +562,23 @@
 #### Q73. For curved smoother-looking edges on a selection, what selection should you pick?
 
 - [x] anti-aliasing
+- [ ]
+- [ ]
+- [ ]
 
 #### Q74. Which tool is _not_ found in the **Select and Mask** workspace ?
 
-- \[ ] Magic Wand
-- \[x] Refine Edge
-- \[ ] Quick Select
-- \[ ] Lasso
+- [ ] Magic Wand
+- [x] Refine Edge
+- [ ] Quick Select
+- [ ] Lasso
 
 #### Q75. Which sets of tool has a content-aware mode ?
 
-- \[ ] Perspective Corp
-- \[ ] Marquee
-- \[ ] Lasso
-- \[x] Patch
+- [ ] Perspective Corp
+- [ ] Marquee
+- [ ] Lasso
+- [x] Patch
 
 #### Q76. Which Photoshpop panel containes project elements that can be shared across Adobe applications ro between collaborators?
 
@@ -583,14 +591,14 @@
 
 - [ ] a layer set
 - [x] a tool set
-- [ ] a keyboard shortcut 
+- [ ] a keyboard shortcut
 - [ ] a workspace
 
 #### Q78. You are retouching a photo by using the Spot Healing Brush tool on a transparent layer aboce the image, but you cannot see any visible changes when you click. What is likely the problem?
 
 - [ ] You need to convert the image to a Smart Object before using this tool.
 - [ ] You must first change the blending mode to Screen
-- [ ] The Spot Healing Brush tool cannot be used on a transparent layer 
+- [ ] The Spot Healing Brush tool cannot be used on a transparent layer
 - [x] The Sample all layers check box on the toolbar is not selected
 
 #### Q79. Which blend mode is useful for dropping out the darkest areas o the top layer and effectively adding up the image details, like multiple slides being projected on top of each other?
@@ -627,3 +635,124 @@
 - [ ] Brush
 - [ ] Quick Selection
 - [x] Refine Edge
+
+#### Q84. Which option is found in the Path Operations drop-down menu?
+
+- [ ] Divide
+- [ ] Combine Shapes
+- [x] Minus Back
+- [ ] Outline
+
+#### Q85. Which file formats does the Save for Web command support? (Select all that apply.) A. SVG B. JPEG C. PNG D. GIF E. MP4
+
+- [x] A, B, C
+- [ ] B, C, D
+- [ ] B, D, E
+- [ ] A, C, E
+
+#### Q86. Which method was used to soften the edges of this selection?
+
+![Which method was used to soften the edges of this selection?](images/image01.jpeg?raw=true)
+
+- [ ] Expand
+- [ ] Smooth
+- [x] Feather
+- [ ] Frow
+
+#### Q87. What can be said about the Curves adjustment shown here?
+
+![What can be said about the Curves adjustment shown here?](images/image02.jpeg?raw=true)
+
+- [ ] It will prevent shadows from pluhhing up.
+- [x] It will increase the midtone contrast.
+- [ ] It will decrease the overall saturation.
+- [ ] It will prevent highlights from being blown out.
+
+#### Q88. Why is the Sycamore Leaf 1 layer underlined, as shown?
+
+![Why is the Sycamore Leaf 1 layer underlined, as shown?](images/image03.jpeg?raw=true)
+
+- [ ] The Sycamore Leaf 1 layer is the base layer of a clipping mask.
+- [ ] The Sycamore Leaf 1 layer is linked layer.
+- [x] The Sycamore Leaf 1 layer is Smart Object.
+- [ ] The Sycamore Leaf 1 layer is selected.
+
+#### Q89. Which layer(s) does the depicted Hue/Saturation 1 adjustment layer affect?
+
+![Which layer(s) does the depicted Hue/Saturation 1 adjustment layer affect?](images/image04.png?raw=true)
+
+- [ ] A
+- [ ] B, C and D
+- [ ] B
+- [x] B and C
+
+#### Q90. What special layer type applies nondestructive color correction to all of the layers below it ?
+
+- [ ] layer comp
+- [x] adjustment layer
+- [ ] layer mask
+- [ ] fill layer
+
+#### Q91. Which command would permanently join two layers into one?
+
+- [x] Group
+- [ ] Merge
+- [ ] Combine
+- [ ] Link
+
+#### Q92. Saturation and Vibrance both strengthen the intensity of the color in your image, however Vibrance is more specific to \_ .
+
+- [x] Midtones
+- [ ] Shadows
+- [ ] Highlights
+- [ ] Global
+
+[Reference](https://www.slrlounge.com/vibrance-vs-saturation-what-is-the-difference/)
+
+#### Q93. Which menu contains the duplicate layer option in photoshop?
+
+- [x] Layer
+- [ ] Filter
+- [ ] Image
+- [ ] Select
+
+[Reference](https://helpx.adobe.com/in/photoshop-elements/using/copying-arranging-layers.html)
+
+#### Q94. When a Hue/Saturation adjustment layer is selected in the Layers panel, what do you do in the Properties panel to decrease the saturation for only a selected color range?
+
+- [ ] Click the On-image adjustment tool, hover over the image with what has become an eyedropper cursor, and drag to the left.
+- [x] Change the preset to Old Style. Then, enable the On-image adjustment tool and select the hue you would like from the image.
+- [ ] Enable the On-image adjustment tool, select the hue you would like from the image, and then adjust the slider that appears below Colorize
+- [ ] Click the On-image adiustment tool, hover over the image with what has become an evedropper cursor, and drag to the right.
+
+#### Q95. You need to preserve layers in your file. Which file format do you use?
+
+- [ ] GIF
+- [ ] PSD
+- [ ] JPEG
+- [ ] PNG
+
+#### Q96. Which RGB control do you click to add a single control point to the Curves adjustment?
+
+![Which RGB control do you click to add a single control point to the Curves adjustment?](images/Q95.png)
+
+- [ ] A (on-image adjustment tool)
+- [ ] B (sample in image to set black point)
+- [ ] C (sample in image to set white point)
+- [ ] D (sample in image to set gray point)
+
+#### Q97. What is the easiest way to export all layers in a document as individual files?
+
+- [ ] Click **File > Scripts > Image Processor**.
+- [ ] Click **File > Export > Export Layer Comps to Files**.
+- [ ] Click **File > Export > Layers to Files**.
+- [ ] Click **File > Scripts > Load files into stack**.
+
+#### Q98. Which options bar icon subtracts from a selection?
+
+![Which options bar icon subtracts from a selection?](images/Q97.png)
+
+- [ ] A
+- [ ] B
+- [ ] C
+- [ ] D

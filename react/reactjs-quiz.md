@@ -251,9 +251,9 @@ function Dish(props) {
 - [ ] a property that lets you set an array as a property
 - [ ] a property that lets you pass data to child elements
 
-[**Explanation**](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
+[Explanation](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
 
-#### Q25. Which attribute do you use to replace innerHTML in the browser DOM?
+#### Q25. Which attribute is React's replacement for using innerHTML in the browser DOM?
 
 - [ ] injectHTML
 - [x] dangerouslySetInnerHTML
@@ -375,8 +375,7 @@ class Clock extends React.Component {
 - [ ] It automatically updates a component.
 - [x] `setState` is asynchronous and might result in out of sync values.
 
-**Explanation:** Because `this.props` and `this.state` may be updated asynchronously, you should not rely on their values for calculating the next state.
-Read [this article](https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1)
+Read [this article](https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1)**Explanation:** Because `this.props` and `this.state` may be updated asynchronously, you should not rely on their values for calculating the next state.
 
 #### Q39. What package contains the render() function that renders a React element tree to the DOM?
 
@@ -407,8 +406,7 @@ class clock extends React.Component {
 - [ ] Remove the render method
 - [x] Capitalize `clock`
 
-**Explanation:** In JSX, lower-case tag names are considered to be HTML tags.
-Read [this article](https://reactjs.org/docs/jsx-in-depth.html#html-tags-vs.-react-components)
+Read [this article](https://reactjs.org/docs/jsx-in-depth.html#html-tags-vs.-react-components)**Explanation:** In JSX, lower-case tag names are considered to be HTML tags.
 
 #### Q42. Which Hook could be used to update the document's title?
 
@@ -816,13 +814,13 @@ database.map((user) => <h1>{user.data}</h1>);
 #### Q69. Describe what is happening in this code?
 
 ```javascript
-const { name: firstName } = person;
+const { name: firstName } = props;
 ```
 
-- [ ] It is creating a new object that contains the same name property as the person object.
-- [ ] It is assigning the value of the person object's firstName property to a constant called name.
-- [ ] It is retrieving the value of person.name.firstName.
-- [x] It is assigning the value of the person object's name property to a constant called firstName.
+- [ ] It is creating a new object that contains the same name property as the props object.
+- [ ] It is assigning the value of the props object's firstName property to a constant called name.
+- [ ] It is retrieving the value of props.name.firstName.
+- [x] It is assigning the value of the props object's name property to a constant called firstName.
 
 #### Q70. What is wrong with this code?
 
@@ -853,11 +851,13 @@ ReactDOM.createPortal(x, y);
 
 ```javascript
 const MyComponent = ({ children }) => (
-  <h1>{children.length}</h1>
+  <div>{children.length}</div>
 );
 ...
 <MyComponent>
-<p>Hello</p>
+<p>
+  Hello <span>World!</span>
+</p>
 <p>Goodbye</p>
 </MyComponent>
 ```
@@ -867,7 +867,7 @@ const MyComponent = ({ children }) => (
 - [ ] undefined
 - [x] 2
 
-#### Q73. What is this assignment pattern called?
+#### Q73. What is this pattern called?
 
 ```javascript
 const [count, setCount] = useState(0);
@@ -885,18 +885,20 @@ const [count, setCount] = useState(0);
 - [ ] public/manifest.json
 - [x] public/index.html
 
-#### Q75. The code below is rendering nothing, and there is an error that says "ReactDOM is not defined." How do you fix this issue?
+#### Q75. The code below is rendering nothing and generate this error: "ReactDOM is not defined." How do you fix this issue?
 
 ```javascript
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom';
 
 const element = <h1>Hi</h1>;
+// Note: error on the line below
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.render(element, document.getElementById('root'));
+root.render(element);
 ```
 
-- [x] `render(element, document.getElementById("root"));`
+- [x] `createRoot(document.getElementById("root"));`
 - [ ] `ReactDOM(element, document.getElementById("root"));`
 - [ ] `renderDOM(element, document.getElementById("root"));`
 - [ ] `DOM(element, document.getElementById("root"));`
@@ -921,9 +923,9 @@ render() {
 
 #### Q77. You are rendering a list with React when this warning appears in the console: "Warning: Each child in a list should have a unique 'key' prop." How do you fix this issue?
 
-- [ ] Pass the name of each item as its key.
-- [ ] Add a key prop with the same value to each item the list.
-- [ ] Clear the console warnings.
+- [ ] Add a key prop with the same value to each item in the list
+- [ ] Clear the console warnings
+- [ ] Use the UseId hook to generate a unique key for each element in the list
 - [x] When iterating over the list items, add a unique property to each list item.
 
 #### Q78. How would you generate the boilerplate code for a new app that you are building to collect underpants?
@@ -1083,7 +1085,7 @@ function Dish() {
 
 [Reference](https://reactjs.org/docs/react-component.html#componentdidmount)
 
-#### Q93. What might you use webpack for?
+#### Q93. What might you use webpack for in React development?
 
 - [ ] to fetch remote dependencies used by your app
 - [x] to split your app into smaller chunks that can be more easily loaded by the browser
@@ -1212,3 +1214,74 @@ ReactDom.render(<Message sent="false" />, document.getElementById('root'));
 ```javascript
 ReactDom.render(<Message sent="false" />, document.getElementById('root'));
 ```
+
+#### Q102. This code is part of an app that collects Pokemon. The useState hook below is a piece of state holding onto the names of the Pokemon collected so far. How would you access the collected Pokemon in state?
+
+```javascript
+const PokeDex = (props) => {
+  const [pokeDex, setPokeDex] = useState([]);
+  /// ...
+};
+```
+
+- [ ] props.pokeDex
+- [ ] this.props.pokeDex
+- [ ] setPokeDex()
+- [x] pokeDex
+
+#### Q103. When using a portal, what is the second argument?
+
+```javascript
+ReactDOM.createPortal(x, y);
+```
+
+- [ ] the current state
+- [ ] the rendered element
+- [ ] the App component
+- [x] the DOM element that exists outside of the parent component
+
+#### Q104. What would you pass to the onClick prop that wil allow you to pass the initName prop into the greeet handler?
+
+```javascript
+const Greeting = ({ initName }) => {
+  const greet = (name) => console.log("Hello, " + name + "!");
+  return <button onClick={ ... }>Greeting Button </button>
+}
+```
+
+- [ ] hug
+- [ ] this.hug(initName)
+- [x] (name) => this.hug(name)
+- [ ] () => hug(initName)
+
+#### Q105. What is the name of the compiler used to transform JSX into JavaScript?
+
+- [x] Babel
+- [ ] JSX Editor
+- [ ] Browser Buddy
+- [ ] ReactDOM
+
+#### Q106. Which hook is used to prevent a function from being recreated on every component render?
+
+- [x] useCallback
+- [ ] useMemo
+- [ ] useRef
+- [ ] useTransition
+
+#### Q107. Why might you use the `useRef` hook?
+
+- [ ] To bind the function
+- [ ] To call a function
+- [x] To directly access a DOM
+- [ ] To refer to another JS file
+
+[Source](https://www.smashingmagazine.com/2020/11/react-useref-hook/)
+
+#### Q108. Which of the following is required to use React?
+
+- [x] JavaScript
+- [ ] React Router
+- [ ] Redux
+- [ ] Prop-Types
+
+[Source](https://reactjs.org/tutorial/tutorial.html#:~:text=What%20Is%20React%3F,of%20code%20called%20%E2%80%9Ccomponents%E2%80%9D.&text=We'll%20get%20to%20the%20funny%20XML%2Dlike%20tags%20soon.)

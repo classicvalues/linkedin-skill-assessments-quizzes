@@ -433,10 +433,10 @@ D. Inserts and Deletions and Formatting are turned off in Show Markup.
 
 #### Q56. You want to be able to edit your Word document simultaneously with other Word users in your organization. Which save location should you select in the Save As dialog box?
 
-A. OneDrive
-B. SharePoint document library
-C. Google Drive
-D. DropBox
+    A. OneDrive
+    B. SharePoint document library
+    C. Google Drive
+    D. DropBox
 
 - [ ] A
 - [ ] A, B, C, D
@@ -463,12 +463,10 @@ D. DropBox
 
 #### Q59. How can you tell if a colleague is coauthoring a document at the same time as you? (Select all that apply.)
 
-```markdown
-A. Colleague's name appears in the Share panel.
-B. Colleague's picture appears in the upper-right corner of the ribbon.
-C. A banner notification pops up as the colleague edits the document.
-D. A flag icon with the colleague's name appears where their edit is being made.
-```
+    A. Colleague's name appears in the Share panel.
+    B. Colleague's picture appears in the upper-right corner of the ribbon.
+    C. A banner notification pops up as the colleague edits the document.
+    D. A flag icon with the colleague's name appears where their edit is being made.
 
 - [ ] A, B, C
 - [ ] B, C, D
@@ -720,7 +718,7 @@ D. A flag icon with the colleague's name appears where their edit is being made.
 - [ ] Translate
 - [ ] Transform
 
-#### Q92. Which is not text wrapping option for a picture?
+#### Q92. Which is not a text wrapping option for a picture?
 
 - [x] justify
 - [ ] through
@@ -733,3 +731,24 @@ D. A flag icon with the colleague's name appears where their edit is being made.
 - [x] In paragraph settings, click Line and Page Break > pagination and select Keep with next
 - [ ] In paragraph settings, click Line and Page Break > pagination and select keep lines together
 - [ ] In paragraph settings, click Line and Page Break > pagination and select Widow/Orphan control
+
+#### Q94. Double clicking in the left margin will \_ the paragraph to the right.
+
+- [ ] double indent
+- [x] select
+- [ ] delete
+- [ ] underline
+
+#### Q95. When using Track Changes, what formatting indicates that text has been deleted?
+
+- [x] strikethrough
+- [ ] wavy line
+- [ ] italic
+- [ ] underline
+
+#### Q96. What action allows you to quickly access a specific document from your list of saved files?
+
+- [ ] Pin to list
+- [ ] Add to chooser
+- [x] Mark as favorite
+- [ ] Drag to Home tab
